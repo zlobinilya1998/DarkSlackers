@@ -101,7 +101,7 @@ elseif playerClass == "PALADIN" then
 end
 
 function DS_AutoResPrior()
-    DEFAULT_CHAT_FRAME:AddMessage("PRIEST - SHAMAN - PALADIN - DRUID - WARLOCK - MAGE - HUNTER - WARRIOR - ROGUE",1,1,0);
+    DEFAULT_CHAT_FRAME:AddMessage("PRIEST - SHAMAN - PALADIN - DRUID - MAGE - WARLOCK - HUNTER - WARRIOR - ROGUE",1,1,0);
 end
 
 function DS_AutoRes()
