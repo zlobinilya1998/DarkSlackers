@@ -71,7 +71,7 @@ end
 function DS_Help()
 	DEFAULT_CHAT_FRAME:AddMessage("Добро пожаловать в Dark Slackers.",1,1,0);
 	DEFAULT_CHAT_FRAME:AddMessage("Список доступных команд:",0,1,0);
-	DEFAULT_CHAT_FRAME:AddMessage("/rl or /reload - Reload UI.",1,1,1);
+	DEFAULT_CHAT_FRAME:AddMessage("/rl - Reload UI.",1,1,1);
 	DEFAULT_CHAT_FRAME:AddMessage("/autores - Воскрешение погибших слакеров.",1,1,1);
 	DEFAULT_CHAT_FRAME:AddMessage("/prior - Показать список приоритета на воскрешение в порядке убывания.",1,1,1);
 	DEFAULT_CHAT_FRAME:AddMessage("/reset - Ресет инстов.",1,1,1);
