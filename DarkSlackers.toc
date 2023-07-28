@@ -1,0 +1,19 @@
+## Version: 1.000
+## Interface: 11200
+## Title: |cFF990099DarkSlackers
+## Author: Rokych
+## Notes: DarkSlackers guild addon, based on 'Cold Embrace' guild addon
+
+libs\Chronos\Chronos.lua
+libs\Chronos\Chronos.xml
+libs\Chronos\Chronos.toc
+libs\Chronos\localization.en.lua
+libs\Chronos\localization.fr.lua
+libs\Chronos\localization.de.lua
+libs\Chronos\localization.lua
+
+libs\AdvancedVanillaCombatLog_Helper\AdvancedVanillaCombatLog_Helper.toc
+libs\AdvancedVanillaCombatLog_Helper\RPLLCollector.xml
+libs\AdvancedVanillaCombatLog_Helper\core.lua
+
+DarkSlackers.xml

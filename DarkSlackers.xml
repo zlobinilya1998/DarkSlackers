@@ -1,0 +1,25 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="DarkSlackers.lua"/>
+	<Frame name="DarkSlackers" parent="UIParent" movable="true" enableMouse="true" hidden="false" frameStrata="LOW">
+		<Size>
+			<AbsDimension x="1" y="1"/>
+		</Size>
+		<Anchors>
+            <Anchor point="CENTER">
+                <Offset>
+                    <AbsDimension x="0" y="0"/>
+                </Offset>
+            </Anchor>
+        </Anchors>
+		<Scripts>
+			<OnLoad>
+				DS_OnLoad();
+			</OnLoad>
+			<OnEvent>
+				DS_OnEvent();
+			</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>
+
