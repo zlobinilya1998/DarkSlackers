@@ -17,12 +17,12 @@ local EVENT_ADDON_LOADED = "ADDON_LOADED"
 local classcolors = { DRUID="FF7D0A", HUNTER="ABD473", MAGE="69CCF0", PALADIN="F58CBA", PRIEST="FFFFFF", ROGUE="FFF569", SHAMAN="F58CBA", WARLOCK="9482C9", WARRIOR="C79C6E" }
 
 function DS_OnLoad()
-	this:RegisterEvent(EVENT_RESURRECT_REQUEST)
 	this:RegisterEvent(EVENT_CHAT_MSG_SYSTEM);
 	this:RegisterEvent(EVENT_CHAT_MSG_WHISPER);
 	this:RegisterEvent(EVENT_CHAT_RAID_WARNING);
-	this:RegisterEvent(EVENT_START_LOOT_ROLL);
 	this:RegisterEvent(EVENT_CHAT_MSG_ADDON);
+	this:RegisterEvent(EVENT_RESURRECT_REQUEST)
+	this:RegisterEvent(EVENT_START_LOOT_ROLL);
 	this:RegisterEvent(EVENT_PLAYER_ENTERING_WORLD);
 	this:RegisterEvent(EVENT_ADDON_LOADED);
 
@@ -101,7 +101,7 @@ elseif playerClass == "PALADIN" then
 end
 
 function DS_AutoResPrior()
-    DEFAULT_CHAT_FRAME:AddMessage("PRIEST - SHAMAN - PALADIN - DRUID - MAGE - WARLOCK - HUNTER - WARRIOR - ROGUE",1,1,0);
+    UIErrorsFrame:AddMessage("PRIEST - SHAMAN - PALADIN - DRUID - MAGE - WARLOCK - HUNTER - WARRIOR - ROGUE",1,1,0);
 end
 
 function DS_AutoRes()
