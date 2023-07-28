@@ -109,7 +109,7 @@ function DS_AutoRes()
 		if HealComm == nil then
 			HealComm = AceLibrary("HealComm-1.0") 
 		end
-		local classOrder = {"PRIEST", "SHAMAN", "PALADIN", "DRUID", "WARLOCK", "MAGE", "HUNTER", "WARRIOR", "ROGUE"};
+		local classOrder = {"PRIEST", "SHAMAN", "PALADIN", "DRUID", "MAGE", "WARLOCK", "HUNTER", "WARRIOR", "ROGUE"};
 		CastSpell(DS_FindSpell(resSpell), BOOKTYPE_SPELL);
 		for c=1,table.getn(classOrder) do
 			for i = 1,40 do
