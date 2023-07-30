@@ -132,7 +132,6 @@ function DS_AutoRes()
 				and raidClass == classOrder[c] 
 				then
 					SpellTargetUnit(Target);
-                    SendChatMessage(UnitName(Target) .. ", хватит лежать, пора послакать", "SAY");
 				end
 			end
 		end
