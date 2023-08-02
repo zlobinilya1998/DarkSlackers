@@ -54,8 +54,8 @@ end
 
 function DS_ON_CHAT_MSG_SPELL_SELF_DAMAGE()
     hasCS = DS_Check_For_Debuff('target',"Spell_Holy_CrusaderStrike", 5);
-    hasFFF = ColdEmbrace_CheckForDebuff('target',"Spell_Nature_FaerieFire");
-    hasSA = ColdEmbrace_CheckForDebuff('target',"Ability_Warrior_Sunder", 5);
+    hasFFF = DS_Check_For_Debuff('target',"Spell_Nature_FaerieFire");
+    hasSA = DS_Check_For_Debuff('target',"Ability_Warrior_Sunder", 5);
     local actionStatus = "Hit";
     local _, _, spellEffect, creature, dmg = string.find(arg1, "Your (.*) hits (.*) for (.*).");
 
