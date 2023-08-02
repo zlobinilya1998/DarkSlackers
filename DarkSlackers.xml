@@ -1,6 +1,7 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
 ..\FrameXML\UI.xsd">
 	<Script file="DarkSlackers.lua"/>
+	<Script file="DarkSlackersAnnouncement.lua"/>
 	<Frame name="DarkSlackers" parent="UIParent" movable="true" enableMouse="true" hidden="false" frameStrata="LOW">
 		<Size>
 			<AbsDimension x="1" y="1"/>
@@ -15,9 +16,11 @@
 		<Scripts>
 			<OnLoad>
 				DS_OnLoad();
+				DS_Announcement_Onload();
 			</OnLoad>
 			<OnEvent>
 				DS_OnEvent();
+				DS_Announcement_OnEvent();
 			</OnEvent>
 		</Scripts>
 	</Frame>

@@ -135,7 +135,5 @@ function DS_AutoRes()
 				end
 			end
 		end
-	elseif playerClass == "DRUID" or playerClass == "WARLOCK" or playerClass == "MAGE" or playerClass == "HUNTER" or playerClass == "WARRIOR" or playerClass == "ROGUE" then
-		DEFAULT_CHAT_FRAME:AddMessage("Если хочешь иметь способность реса, то пересаживайся играть на паладина",1,1,0);
 	end
 end
