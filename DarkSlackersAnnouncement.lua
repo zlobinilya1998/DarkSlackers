@@ -1,12 +1,7 @@
 function DS_Announcement_Onload()
-	this:RegisterEvent("PLAYER_AURAS_CHANGED")
-	this:RegisterEvent("CHAT_MSG_SPELL_SELF_DAMAGE");
 	this:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_SELF_BUFFS");
 	this:RegisterEvent("CHAT_MSG_SPELL_AURA_GONE_SELF");
-	this:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_HOSTILEPLAYER_DAMAGE");
-	this:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_HOSTILEPLAYER_BUFFS");
-	this:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_BUFFS");
-	this:RegisterEvent("CHAT_MSG_SPELL_PERIODIC_CREATURE_DAMAGE");
+	this:RegisterEvent("CHAT_MSG_SPELL_SELF_DAMAGE");
 end
 
 
@@ -15,9 +10,8 @@ function DS_Announcement_OnEvent()
 	target = UnitName("Target");
 	icon1, name1, active1, castable1 = GetShapeshiftFormInfo(1)
 	if (event == "CHAT_MSG_SPELL_PERIODIC_SELF_BUFFS") then DS_ON_CHAT_MSG_SPELL_PERIODIC_SELF_BUFFS();
-        elseif (event == "CHAT_MSG_SPELL_AURA_GONE_SELF") then DS_ON_CHAT_MSG_SPELL_AURA_GONE_SELF();
-        elseif(event == "PLAYER_AURAS_CHANGED") then
-	    elseif (event == "CHAT_MSG_SPELL_SELF_DAMAGE") then DS_ON_CHAT_MSG_SPELL_SELF_DAMAGE();
+    elseif (event == "CHAT_MSG_SPELL_AURA_GONE_SELF") then DS_ON_CHAT_MSG_SPELL_AURA_GONE_SELF();
+    elseif (event == "CHAT_MSG_SPELL_SELF_DAMAGE") then DS_ON_CHAT_MSG_SPELL_SELF_DAMAGE();
 	end
 end
 
