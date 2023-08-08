@@ -3,6 +3,7 @@
 ## Title: |cFF990099DarkSlackers
 ## Author: Rokych
 ## Notes: DarkSlackers guild addon, based on 'Cold Embrace' guild addon
+## SavedVariablesPerCharacter: DarkSlackersConfig
 
 libs\Chronos\Chronos.lua
 libs\Chronos\Chronos.xml
